@@ -14,6 +14,7 @@
         <nav>
             <img src="/image/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Icone de Menu" class="icone-menu" onclick="mostrarMenu()"/>
             <section class="menu-navegacao">
+                <img src="image/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Icone de Fechar Menu" class="icone-fechar" onclick="fecharMenu()"/>
                 <a href="">Novidades</a>
                 <a href="">Roupas</a>
                 <a href="">Sobre</a>
@@ -22,12 +23,12 @@
             </section>
         </nav>
     </header>
-    <main>
+    <main class="container-corpo">
         <section class="apresentacao">
             <h1>Bem-vindo à Lkriccomultimarca</h1>
             <p>Sua loja de roupas multimarca favorita!</p>
         </section>
-        <section class="card-novidade">
+        <section class="card-secao" id="card-novidades">
             <h2>Novidades</h2>
             <p>Confira as últimas tendências em moda que acabaram de chegar!</p>
             <article class="produtoNovidade">
@@ -51,7 +52,7 @@
                 <p>Descrição do Produto 1</p>
             </article>
         </section>
-        <section class="card-roupas">
+        <section class="card-secao" id="card-roupas">
             <h2>Roupas</h2>
             <p>Explore nossa coleção de roupas para todas as ocasiões!</p>
             <article class="produtoRoupa">
