@@ -1,21 +1,25 @@
-let button = document.querySelector('.icone-menu');
+let main = document.querySelector('.container-corpo');
+let buttonMenu = document.querySelector('.icone-menu');
+let buttonClose = document.querySelector('.icone-fechar');
 let menu = document.querySelector('.menu-navegacao');
-let img = document.querySelector('.icone-menu ');
 
-button.addEventListener('click', function() {
-    if (menu.style.display === 'flex') {
-        menu.style.display = 'none';
-        button.style.position = 'fixed';
-        menu.style.position = 'fixed';
-        button.style.left = '90%';
-        button.style.top = '4%';
-        img.src = 'image/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png';
-    } else {
-        menu.style.display = 'flex';
-        menu.style.left = '80%';
-        button.style. position =' absolute';
-        button.style.left = '60%';
-        button.style.top = '1%';
-        button.style.zIndex = '1000';
-        img.src = 'image/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png';
-    }   });
+buttonMenu.addEventListener('click', function() {
+    menu.style.position = 'fixed';
+    menu.style.top = '0';
+    menu.style.right = '0';
+    menu.style.transition = '0.8s ease-in-out';
+    main.style.opacity = '0.2';
+    main.style.transition = '0.8s ease-in-out';
+    buttonMenu.style.opacity = '0';
+    buttonMenu.style.transition = '1.2s ease-in-out';
+});
+
+buttonClose.addEventListener('click', function(){
+    menu.style.right = '-30%';
+    menu.style.transition = '0.8s ease-in-out';
+    main.style.opacity = '1';
+    main.style.transition = '0.8s ease-in-out';
+    buttonMenu.style.opacity = '1';
+    buttonMenu.style.transition = '1.2s ease-in-out';
+
+})
