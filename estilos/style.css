@@ -16,7 +16,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--primary-color);
     color: #333;
     line-height: 1.6;
 }
@@ -24,8 +23,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #ffffff;
-    border-bottom: #e8491d 5px solid;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 header .logotipo {
     width: 80px;
@@ -42,22 +40,32 @@ header .logotipo {
     color: #333;
 }
 .menu-navegacao {
-    position: fixed;
-    background-color: #33333392;
-    backdrop-filter: blur(10px);
-    width: 300px;
-    height: 300px;
-    top: 20%;
-    left: 122%;
-    transform: translate(-50%, -50%);
-    right:0;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: -30%;
+    height: 100vh;
+    background-color: #33333392;
+    backdrop-filter: blur(10px);
+    width: 200px;
     gap: 20px;
-    border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.icone-fechar{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 10px;
+    align-self: flex-start;
+    box-shadow: 2px 2px 20px rgba(37, 32, 32, 0.438);
+    border-radius: 5px;
+    transition: 0.8s ease-in-out;
+}
+.icone-fechar:hover{
+    transition: 0.8s ease-in-out;
+    background-color: #ffffff;
 }
 .menu-navegacao a {
     color: var(--font-color);
@@ -65,4 +73,44 @@ header .logotipo {
     text-decoration: none;
     font-weight: bold;
     font-size: 12px;
+}
+
+.container-corpo {
+    width: 100%;
+    padding: 20px;
+}
+.apresentacao {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.card-secao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: #ffffff;
+    height: 100vh;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.card-secao h2 {
+    margin-bottom: 10px;
+    font-family: 'IBM Plex Serif', serif;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.223);
+}
+.produtoNovidade, .produtoRoupa {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
 }
