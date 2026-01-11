@@ -3,19 +3,19 @@ let buttonMenu = document.querySelector('.icone-menu');
 let buttonClose = document.querySelector('.icone-fechar');
 let menu = document.querySelector('.menu-navegacao');
 
-buttonMenu.addEventListener('click', function() {
+buttonMenu.addEventListener('click', function () {
     menu.style.position = 'fixed';
     menu.style.top = '0';
     menu.style.right = '0';
     menu.style.transition = '0.8s ease-in-out';
-    main.style.opacity = '0.2';
+
     main.style.transition = '0.8s ease-in-out';
     buttonMenu.style.opacity = '0';
     buttonMenu.style.transition = '1.2s ease-in-out';
 });
 
-buttonClose.addEventListener('click', function(){
-    menu.style.right = '-30%';
+buttonClose.addEventListener('click', function () {
+    menu.style.right = '-41%';
     menu.style.transition = '0.8s ease-in-out';
     main.style.opacity = '1';
     main.style.transition = '0.8s ease-in-out';
@@ -23,3 +23,12 @@ buttonClose.addEventListener('click', function(){
     buttonMenu.style.transition = '1.2s ease-in-out';
 
 })
+
+let img = document.querySelector('.imgProduto')
+let titulo = document.querySelector('.tituloProduto')
+
+function carrosselNovidades(){
+
+}
+
+const url = 'https://fakestoreapi.com/products?limit=6';
