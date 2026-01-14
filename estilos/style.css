@@ -14,8 +14,9 @@
         opacity: 0;
     }
     50%,60%,70%,80%{
-        left: 100px;
+        left: 15px;
         opacity: 1;
+    
 
     }
     100%{
@@ -143,26 +144,30 @@ header .logotipo {
     border-radius: 10px;
     box-shadow: 2px 2px 10px #0000005b;
 }
-
+.card-nov{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 300px;
+    animation: carrosselNovidade 10s linear  1 ; 
+}
 
 .imgProduto{
     width: 130px;
     height: auto;
-    position: absolute;
-    left: 300px;
     margin-bottom: 10px;
     image-rendering: auto;
     background-color: transparent;
-    animation: carrosselNovidade 10s linear 1  ;
+    
 }
 .linha{
     width: 50%;
     border: 1px solid #00000040;
     box-shadow: 2px 2px 5px #00000055;
     margin: 5px;
-    position: relative;
-    left: 240px;
-    /*animation: carrosselNovidade 10s linear 1;*/
 }
 .tituloProduto{
     max-width: 70%;
@@ -171,16 +176,13 @@ header .logotipo {
     color: var(--font-color);
     text-align: center;
     margin-bottom: 5px;
-    position: relative;
-    left: 240px;
-    /*animation: carrosselNovidade 10s linear 1;*/
+
+
 }
 .valor{
     font-weight: bold;
     font-size: 12px;
     color: var(--primary-color);
-    position: relative;
-    left: 240px;
-    /*animation: carrosselNovidade 10s linear 1;*/
+
 
 }

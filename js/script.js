@@ -24,11 +24,6 @@ buttonClose.addEventListener('click', function () {
 
 })
 
-let img = document.querySelector('.imgProduto')
-let titulo = document.querySelector('.tituloProduto')
 
-function carrosselNovidades(){
-
-}
 
 const url = 'https://fakestoreapi.com/products?limit=6';
