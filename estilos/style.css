@@ -9,16 +9,20 @@
 }
 
 @keyframes carrosselNovidade {
-    0% {
-        left: 240px;
+    0%,10%,20%,30% {
+        left: 300px;
+        opacity: 0;
     }
-    50%{
-        left: 10px;
+    50%,60%,70%,80%{
+        left: 100px;
+        opacity: 1;
 
     }
     100%{
-        left: -10px;
+        left: -200px;
+        opacity: 0;
     }
+    
     
     
 }
@@ -144,12 +148,12 @@ header .logotipo {
 .imgProduto{
     width: 130px;
     height: auto;
-    position: relative;
-    
+    position: absolute;
+    left: 300px;
     margin-bottom: 10px;
     image-rendering: auto;
     background-color: transparent;
-    animation: carrosselNovidade 5s linear 1;
+    animation: carrosselNovidade 10s linear 1  ;
 }
 .linha{
     width: 50%;
@@ -158,6 +162,7 @@ header .logotipo {
     margin: 5px;
     position: relative;
     left: 240px;
+    /*animation: carrosselNovidade 10s linear 1;*/
 }
 .tituloProduto{
     max-width: 70%;
@@ -168,6 +173,7 @@ header .logotipo {
     margin-bottom: 5px;
     position: relative;
     left: 240px;
+    /*animation: carrosselNovidade 10s linear 1;*/
 }
 .valor{
     font-weight: bold;
@@ -175,5 +181,6 @@ header .logotipo {
     color: var(--primary-color);
     position: relative;
     left: 240px;
+    /*animation: carrosselNovidade 10s linear 1;*/
 
 }
