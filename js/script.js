@@ -24,6 +24,16 @@ buttonClose.addEventListener('click', function () {
 
 })
 
+const cardNov = document.querySelector('.card-nov');
+let indexAtual = 0;
+function mostrarNovidades(index) {
+    cardNov.forEach((card, i) => {
+        card.style.display = i === index ?  'block' : 'none';
+    });
+}
+
+
+
 
 
 const url = 'https://fakestoreapi.com/products?limit=6';
