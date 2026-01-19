@@ -247,3 +247,6 @@ header .logotipo {
     background: url(/image/img.modafemi.png) top center no-repeat;
     background-size: cover;
 }
+.linkroupas{
+    cursor: pointer;
+}
