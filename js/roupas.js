@@ -12,7 +12,7 @@ async function chamarApi() {
              <article class="cardroupas">
                 <img src=" ${element.image}" alt="" class="imgcard">
                 <p class="titulo"> ${element.title}</p>
-                <p class="preco">${element.price}</p>
+                <p class="preco">R$ ${element.price}</p>
             </article>
             `
             
@@ -23,3 +23,8 @@ async function chamarApi() {
 }
 
 chamarApi();
+
+let buttonVoltar = document.querySelector('.buttonVoltar')
+buttonVoltar.addEventListener('click' , () => {
+    window.location.href = '/index.html'
+})

@@ -3,29 +3,63 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-body{
-    background-color: rgba(0, 0, 0, 0.808);
+.buttonVoltar{
+    position: fixed;
+    margin: 7px 0 0 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(188, 173, 173, 0.26);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.421);
+}
+.buttonVoltar:hover{
+    transform: scale(0.9);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
 .carregarRoupasmasc{
     display: flex;
-    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 7px;
+
 
 }
 .cardroupas{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    background-color: rgba(240, 248, 255, 0.508);
-    width: 300px;
+    background-color: rgba(188, 173, 173, 0.26);
+    width: 250px;
     height: 300px;
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.236);
+    transition: 0.8s;
+    cursor: pointer;
+}
+.cardroupas:hover{
+    transform: scale(1.1);
+    transition: 0.8s ease-in-out ;
 }
 .imgcard{
     width: 100px;
     height: auto;
+}
+.titulo{
+    text-align: center;
+    margin: 10px;
+}
+
+.preco{
+    text-align: center;
+    background-color: rgba(238, 238, 238, 0.39);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.151);
+    position: absolute;
+    bottom: 7px;
 }

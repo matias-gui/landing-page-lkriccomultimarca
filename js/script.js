@@ -47,15 +47,3 @@ function carrosselNovidades(){
 carrosselNovidades()
 
 setInterval(carrosselNovidades, 5000)
-
-
- 
-
-
-
-
-
-
-
-
-const url = 'https://fakestoreapi.com/products?limit=6';
