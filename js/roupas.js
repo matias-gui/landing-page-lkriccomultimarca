@@ -9,22 +9,28 @@ async function chamarApi() {
         const apires = await res.json();
         apires.forEach(element  => {
             carregarRoupasmasc.innerHTML += `
-             <article class="cardroupas">
+             <article onclick="clicou()"class="cardroupas">
                 <img src=" ${element.image}" alt="" class="imgcard">
                 <p class="titulo"> ${element.title}</p>
                 <p class="preco">R$ ${element.price}</p>
             </article>
             `
-            
-        });
-        
+        });   
 
     }
 }
-
 chamarApi();
+
+
+    function clicou (){
+            console.log('oooo')
+        }
 
 let buttonVoltar = document.querySelector('.buttonVoltar')
 buttonVoltar.addEventListener('click' , () => {
     window.location.href = '/index.html'
 })
+
+
+
+
