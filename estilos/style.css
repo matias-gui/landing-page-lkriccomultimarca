@@ -257,21 +257,63 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 100vh;
     background-color: #000;
     color: #ffff;
 }
-.contatos{
+.duvidas, .sobre{
+    margin: 10px 0;
+    width: 85%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    text-indent: 50px;
+    border-bottom: 1px solid #fff;
+}
+.duvidas summary, .sobre summary{
+    cursor: pointer;
+    list-style: none;
+}
+.contatos,.formaPagamentos{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px;
     width: 500px;
+    margin: 20px 0;
 }
-.contatos article{
+.contatos article, .formaPagamentos article{
     display: flex;
     padding: 5px;
     gap: 15px;
-    margin: 30px 0 0 0;
+    margin: 30px 0 ;
+}
+.contatos p a img {
+    width: 40px;
+    padding: 5px;
+    border: 1px solid #ffffff2f;
+    box-shadow: 2px 2px 5px inset #ffffff2d;
+    border-radius: 10px;
+}
+.imgFormaPagamentos{
+    width: 45px;
+    padding: 5px;
+    background-color: #fffafa7f;
+    border: 1px solid #ffffff2f;
+    box-shadow: 2px 2px 5px inset #ffffff2d;
+    border-radius: 10px;
+}
+.linha{
+    width: 85%;
+    border: 1px solid  #ffff;
+    margin: 20px 0;
+    box-shadow: 2px 2px 5px inset #ffffff2d;
+
+}
+.enderçoDireitos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
 }
