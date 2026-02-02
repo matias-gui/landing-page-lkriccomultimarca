@@ -26,24 +26,3 @@ buttonClose.addEventListener('click', function () {
 const cardNov = document.getElementsByClassName('card-nov');
 let indice = 0;
 
-function carrosselNovidades(){
- 
-    for( let i = 0; i < cardNov.length; i++){
-         cardNov[i].style.display = 'none'
-    };
-
-    cardNov[indice].style.display = 'flex'
-
-    
-
-    indice++;
-
-    if(indice >= cardNov.length){
-        indice = 0;
-    }
-
-
-}
-carrosselNovidades()
-
-setInterval(carrosselNovidades, 5000)
