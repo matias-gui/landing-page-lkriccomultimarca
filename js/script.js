@@ -23,6 +23,12 @@ buttonClose.addEventListener('click', function () {
     buttonMenu.style.transition = '1.2s ease-in-out';
 
 })
-const cardNov = document.getElementsByClassName('card-nov');
-let indice = 0;
+
+let buttonnovidades = document.querySelector('.buttonnovidades')
+
+buttonnovidades.addEventListener('click' , () => {
+    window.location.href = '/roupasnovidades.html'
+})
+
+
 
