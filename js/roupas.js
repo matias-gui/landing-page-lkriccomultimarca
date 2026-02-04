@@ -11,8 +11,8 @@ async function chamarApi() {
             carregarRoupasmasc.innerHTML += `
              <article class="cardroupas">
                 <img src=" ${element.image}" alt="" class="imgcard">
-                <p class="titulo"> ${element.title}</p>
                 <p class="preco">R$ ${element.price}</p>
+                <p class="titulo"> ${element.title}</p>
             </article>
             `
         });   

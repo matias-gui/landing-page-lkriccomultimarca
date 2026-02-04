@@ -26,27 +26,25 @@
 
 }
 .cardroupas{
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(188, 173, 173, 0.26);
-    width: 250px;
-    height: 300px;
-    padding: 10px;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 360px;
     margin: 10px;
+    border: 1px solid #0000000e;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.236);
-    transition: 0.8s;
-    cursor: pointer;
+    box-shadow: 1px 1px 5px  #00000009;
+    background-color: #0000000b;
 }
 .cardroupas:hover{
-    transform: scale(1.1);
-    transition: 0.8s ease-in-out ;
+    border: 1px solid #000;
+    transition:all 0.8s;
 }
 .imgcard{
-    width: 100px;
+    width: 150px;
     height: auto;
 }
 .titulo{
@@ -55,12 +53,8 @@
 }
 
 .preco{
-    text-align: center;
-    background-color: rgba(238, 238, 238, 0.39);
-    padding: 5px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.151);
-    position: absolute;
-    bottom: 7px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 15px 0;
 }
 
