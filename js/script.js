@@ -25,10 +25,40 @@ buttonClose.addEventListener('click', function () {
 })
 
 let buttonnovidades = document.querySelector('.buttonnovidades')
+let produtoNovidades = document.querySelector("#card-novidades")
 
-buttonnovidades.addEventListener('click' , () => {
+buttonnovidades.addEventListener,produtoNovidades.addEventListener('click' , () => {
     window.location.href = '/roupasnovidades.html'
 })
+// Texto que vai ser digitado na tela
+const text = "Confira as Novidades"
+let digitartext = document.querySelector('.digitartext')
+
+let index = 0
+function escreverh2 (){
+    if(index < text.length){
+        digitartext.innerHTML += text.charAt(index);
+        index++;
+        setTimeout (escreverh2, 200);
+    }else{
+        setTimeout(limparh2, 1000)
+    }
+}
+
+function limparh2(){
+    const textAtual = digitartext.innerHTML
+    if(textAtual.length > 0){
+        digitartext.innerHTML = textAtual.slice(0, -1);
+           setTimeout(limparh2, 100)
+    }else if(textAtual.length === 0){
+        index = 0
+        setTimeout(escreverh2, 200)
+    }
+
+}
+
+escreverh2()
+
 
 
 
