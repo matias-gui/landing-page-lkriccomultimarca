@@ -59,6 +59,22 @@ function limparh2(){
 
 escreverh2()
 
+let buttonmasc = document.querySelector('#buttonmasc')
+let buttonfemin = document.querySelector('#buttonfemin')
+let carregarroupas = document.querySelector('.carregarroupas')
+
+
+buttonmasc.addEventListener('click', () => {
+     buttonmasc.classList.add("active")
+     buttonfemin.classList.remove("active")
+   
+})
+
+buttonfemin.addEventListener('click', () => {
+   buttonmasc.classList.remove("active")
+   buttonfemin.classList.add("active")
+   
+})
 
 
 

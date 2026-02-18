@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 :root {
     --primary-color: #f06124;
@@ -170,24 +171,56 @@ header .logotipo {
     justify-content: center;
     align-items: center;
 }
-.cardroupa{
+.containerbutton{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 260px;
-    margin: 15px;
+    width: 100%;
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #00000005;
-    box-shadow: rgba(0, 0, 0, 0.095) 0px 19px 38px, rgba(0, 0, 0, 0.089) 0px 15px 12px;
-    transition: all 0.9s;
 }
-.cardroupa:hover{
-    transition: all 0.9s;
-    border: 1px solid #00000064;
-    transform: scale(1.1);
+.buttonmascfemin {
+    position: relative;
+    padding: 10px;
+    width: 40%;
+    border: none;
+    background-color: #fff;
+    font-size: 18px;
+    font-family: "Manrope", sans-serif;
+    border-bottom: 1px solid #0000004e;
+    cursor: pointer;
 }
+
+.buttonmascfemin::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: black;
+
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+#buttonmasc::after{
+    transform-origin: right;
+}
+#buttonfemin::after{
+     transform-origin: left;
+}
+
+
+.buttonmascfemin.active {
+    transition: 0.4s ease-in-out;
+    font-weight: bold;
+}
+
+.buttonmascfemin.active::after {
+    transform: scaleX(1);
+}
+
+
+
 .cardroupa h2{
     align-self: end;
 
@@ -202,22 +235,6 @@ header .logotipo {
     border-radius: 50%;
     margin: 20px;
 
-}
-
-#masculino {
-    margin-top: 20px;
-    image-rendering: auto;
-    overflow: hidden;
-    background: url(/image/img.modamasc.png) center center no-repeat;
-    background-size: cover;
-}
-
-#feminina {
-    margin-top: 20px;
-    image-rendering: auto;
-    overflow: hidden;
-    background: url(/image/img.modafemi.png) center center no-repeat;
-    background-size: cover;
 }
 .linkroupas{
     cursor: pointer;
