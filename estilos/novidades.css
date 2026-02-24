@@ -3,18 +3,27 @@
     margin: 0;
     box-sizing: border-box;
 }
+.card-secao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .buttonVoltar{
     position: fixed;
-    margin: 10px 0 0 10px;
+    margin: 10px 0 0 15px;
     padding: 5px;
     border-radius: 50%;
     border: none;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.421);
+    box-shadow: 2px 2px 5px rgba(26, 10, 10, 0.421);
+
 }
 .buttonVoltar:hover{
-    transform: scale(0.9);
-    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
     cursor: pointer;
+
 }
 .container-corpo{
     width: 100%;

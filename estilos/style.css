@@ -13,7 +13,6 @@
         opacity: 0;
     }
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -104,26 +103,15 @@ header .logotipo {
     font-style: normal;
 }
 
-.card-secao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.card-secao{
     padding: 20px;
     width: 100vw;
+    min-height: 100vh;
     margin-bottom: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
-#card-novidades{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: end;
-    background: url(/image/keagan-henman-XYtuOYfIg_M-unsplash.jpg) center center  no-repeat ;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    cursor: pointer;
-}
+
 .primeiroh2{
     animation: carrosselh2 10s linear infinite forwards;
 }
@@ -150,8 +138,24 @@ header .logotipo {
     z-index: 1;
 
 }
+#card-novidades{
+    display: flex;
+    padding: 20px;
+    width: 100vw;
+    min-height: 100vh;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+#card-novidades{
+    background: url(/image/keagan-henman-XYtuOYfIg_M-unsplash.jpg);
+    background-size: cover;
+    background-position: left;
+    transition: background-position 2s  ease-in-out;
+}
 
 .buttonnovidades{
+    align-self: end;
     width: 150px;
     padding: 10px;
     border-radius: 20px;
@@ -190,33 +194,37 @@ header .logotipo {
     cursor: pointer;
 }
 
-.buttonmascfemin::after {
-    content: "";
+#buttonmasc::after {
+    content: " ";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: #000;
+    transition:  0.7s ease-in-out;
+}
+#buttonmasc.active::after{
+    width: 100%;
+}
+#buttonfemin::after{
+    content: " ";
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 0;
     height: 3px;
-    background: black;
-
-    transform: scaleX(0);
-    transition: transform 0.4s ease;
+    background-color: #000;
+    transition: 0.7s ease-in-out;
 }
-#buttonmasc::after{
-    transform-origin: right;
-}
-#buttonfemin::after{
-     transform-origin: left;
+#buttonfemin.active::after{
+    width: 100%;
 }
 
 
 .buttonmascfemin.active {
-    transition: 0.4s ease-in-out;
+    transition: 0.9s ease-in-out;
     font-weight: bold;
-}
-
-.buttonmascfemin.active::after {
-    transform: scaleX(1);
 }
 
 
@@ -322,5 +330,5 @@ details a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 2
 }

@@ -22,18 +22,16 @@ buttonClose.addEventListener('click', function () {
     buttonMenu.style.opacity = '1';
     buttonMenu.style.transition = '1.2s ease-in-out';
 
-})
+});
 
 let buttonnovidades = document.querySelector('.buttonnovidades')
-let produtoNovidades = document.querySelector("#card-novidades")
-
-buttonnovidades.addEventListener,produtoNovidades.addEventListener('click' , () => {
+buttonnovidades.addEventListener('click' , () => {
     window.location.href = '/roupasnovidades.html'
 })
+
 // Texto que vai ser digitado na tela
 const text = "Confira as Novidades"
 let digitartext = document.querySelector('.digitartext')
-
 let index = 0
 function escreverh2 (){
     if(index < text.length){
@@ -56,14 +54,13 @@ function limparh2(){
     }
 
 }
-
 escreverh2()
+
+
 
 let buttonmasc = document.querySelector('#buttonmasc')
 let buttonfemin = document.querySelector('#buttonfemin')
 let carregarroupas = document.querySelector('.carregarroupas')
-
-
 buttonmasc.addEventListener('click', () => {
      buttonmasc.classList.add("active")
      buttonfemin.classList.remove("active")
@@ -75,6 +72,27 @@ buttonfemin.addEventListener('click', () => {
    buttonfemin.classList.add("active")
    
 })
+
+let backgroundNovidades = document.querySelector('#card-novidades')
+let url1 = '/image/keagan-henman-XYtuOYfIg_M-unsplash.jpg'
+let url2 = '/image/toa-heftiba-fPWQGM8quQQ-unsplash.jpg'
+let atual = true
+function trocarBackground(){
+         if(atual){
+        backgroundNovidades.style.background = `url(${url1})`}
+        else{
+         backgroundNovidades.style.background = `url(${url2})`
+    }
+        atual =!atual 
+        backgroundNovidades.style.backgroundSize = 'cover'
+        backgroundNovidades.style.animation = 'trocarBackground 2s infinite';
+}
+setInterval((
+    trocarBackground
+),5000)
+
+
+
 
 
 
