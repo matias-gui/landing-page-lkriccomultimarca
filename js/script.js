@@ -2,12 +2,15 @@ let main = document.querySelector('.container-corpo');
 let buttonMenu = document.querySelector('.icone-menu');
 let buttonClose = document.querySelector('.icone-fechar');
 let menu = document.querySelector('.menu-navegacao');
+let body = document.body
 
 buttonMenu.addEventListener('click', function () {
     menu.style.position = 'fixed';
-    menu.style.top = '0';
     menu.style.right = '0';
     menu.style.transition = '0.8s ease-in-out';
+    menu.style.width = '100%';
+    body.style.overflow = 'hidden';
+
 
     main.style.transition = '0.8s ease-in-out';
     buttonMenu.style.opacity = '0';
@@ -15,7 +18,8 @@ buttonMenu.addEventListener('click', function () {
 });
 
 buttonClose.addEventListener('click', function () {
-    menu.style.right = '-41%';
+    body.style.overflowY = 'auto';
+    menu.style.right = '-100%';
     menu.style.transition = '0.8s ease-in-out';
     main.style.opacity = '1';
     main.style.transition = '0.8s ease-in-out';
@@ -72,24 +76,6 @@ buttonfemin.addEventListener('click', () => {
    buttonfemin.classList.add("active")
    
 })
-
-let backgroundNovidades = document.querySelector('#card-novidades')
-let url1 = '/image/keagan-henman-XYtuOYfIg_M-unsplash.jpg'
-let url2 = '/image/toa-heftiba-fPWQGM8quQQ-unsplash.jpg'
-let atual = true
-function trocarBackground(){
-         if(atual){
-        backgroundNovidades.style.background = `url(${url1})`}
-        else{
-         backgroundNovidades.style.background = `url(${url2})`
-    }
-        atual =!atual 
-        backgroundNovidades.style.backgroundSize = 'cover'
-        backgroundNovidades.style.animation = 'trocarBackground 2s infinite';
-}
-setInterval((
-    trocarBackground
-),5000)
 
 
 
