@@ -1,0 +1,145 @@
+{
+    "roupasMasc":[
+    {
+        "id": 1,
+        "titulo": "Camisa Polo",
+        "preco": "R$89,99",
+        "cor": "Branca",
+        "img": "https://via.placeholder.com/300?text=Camisa+Polo+Branca"
+    },
+    {
+        "id": 2,
+        "titulo": "Camiseta Lisa",
+        "preco": "R$45,00",
+        "cor": "Preta",
+        "img": "https://via.placeholder.com/300?text=Camiseta+Preta"
+    },
+    {
+        "id": 3,
+        "titulo": "Bermuda Jeans",
+        "preco": "R$120,00",
+        "cor": "Azul",
+        "img": "https://via.placeholder.com/300?text=Bermuda+Jeans"
+    },
+    {
+        "id": 4,
+        "titulo": "Calça Social",
+        "preco": "R$180,00",
+        "cor": "Cinza",
+        "img": "https://via.placeholder.com/300?text=Calca+Social"
+    },
+    {
+        "id": 5,
+        "titulo": "Jaqueta Jeans",
+        "preco": "R$250,00",
+        "cor": "Azul Claro",
+        "img": "https://via.placeholder.com/300?text=Jaqueta+Jeans"
+    },
+    {
+        "id": 6,
+        "titulo": "Camiseta Estampada",
+        "preco": "R$55,00",
+        "cor": "Vermelha",
+        "img": "https://via.placeholder.com/300?text=Camiseta+Estampada"
+    },
+    {
+        "id": 7,
+        "titulo": "Shorts Esportivo",
+        "preco": "R$95,00",
+        "cor": "Preto",
+        "img": "https://via.placeholder.com/300?text=Shorts+Esportivo"
+    },
+    {
+        "id": 8,
+        "titulo": "Camisa Xadrez",
+        "preco": "R$110,00",
+        "cor": "Vermelho/Preto",
+        "img": "https://via.placeholder.com/300?text=Camisa+Xadrez"
+    },
+    {
+        "id": 9,
+        "titulo": "Calça Jeans Slim",
+        "preco": "R$150,00",
+        "cor": "Azul Escuro",
+        "img": "https://via.placeholder.com/300?text=Calca+Jeans+Slim"
+    },
+    {
+        "id": 10,
+        "titulo": "Polo com Listras",
+        "preco": "R$99,00",
+        "cor": "Azul/Branco",
+        "img": "https://via.placeholder.com/300?text=Polo+Listras"
+    }],
+    "roupasFem": [
+        {
+            "id": 1,
+            "titulo": "Blusa de Alça",
+            "preco": "R$79,99",
+            "cor": "Rosa",
+            "img": "https://via.placeholder.com/300?text=Blusa+de+Al%C3%A7a"
+        },
+        {
+            "id": 2,
+            "titulo": "Vestido Floral",
+            "preco": "R$149,00",
+            "cor": "Multicolorido",
+            "img": "https://via.placeholder.com/300?text=Vestido+Floral"
+        },
+        {
+            "id": 3,
+            "titulo": "Saia Midi",
+            "preco": "R$89,00",
+            "cor": "Preta",
+            "img": "https://via.placeholder.com/300?text=Saia+Midi"
+        },
+        {
+            "id": 4,
+            "titulo": "Calça Legging",
+            "preco": "R$59,00",
+            "cor": "Cinza",
+            "img": "https://via.placeholder.com/300?text=Cal%C3%A7a+Legging"
+        },
+        {
+            "id": 5,
+            "titulo": "Jaqueta de Couro",
+            "preco": "R$299,00",
+            "cor": "Preta",
+            "img": "https://via.placeholder.com/300?text=Jaqueta+de+Couro"
+        },
+        {
+            "id": 6,
+            "titulo": "Top Cropped",
+            "preco": "R$49,99",
+            "cor": "Branca",
+            "img": "https://via.placeholder.com/300?text=Top+Cropped"
+        },
+        {
+            "id": 7,
+            "titulo": "Macacão Jeans",
+            "preco": "R$199,00",
+            "cor": "Azul",
+            "img": "https://via.placeholder.com/300?text=Macac%C3%A3o+Jeans"
+        },
+        {
+            "id": 8,
+            "titulo": "Cropped Estampado",
+            "preco": "R$69,00",
+            "cor": "Verde",
+            "img": "https://via.placeholder.com/300?text=Cropped+Estampado"
+        },
+        {
+            "id": 9,
+            "titulo": "Shorts Jeans",
+            "preco": "R$119,00",
+            "cor": "Azul",
+            "img": "https://via.placeholder.com/300?text=Shorts+Jeans"
+        },
+        {
+            "id": 10,
+            "titulo": "Blazer Slim",
+            "preco": "R$179,00",
+            "cor": "Bege",
+            "img": "https://via.placeholder.com/300?text=Blazer+Slim"
+        }
+    ]
+}
