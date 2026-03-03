@@ -268,26 +268,28 @@ nav .menu-navegacao a:hover::after{
 .linkroupas{
     cursor: pointer;
 }
+#card-roupas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .carregarroupas{
     display: flex;
     height: 100vh;
-    padding: 10px;
-
+    transition: transform 2s ease-in-out;
 }
 .containercarregarroupas{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
-    margin: 10px;
-    border: 1px solid #000;
-    min-height: 200px;
+    min-width: 100%;
+    box-shadow: 2px 2px 5px #0000004a;
+    
 }
-.containercarregarroupas .carregarroupasimg{
-    width: 30px;
-    height: 30px;
-}
+
+
 
 footer{
     display: flex;
