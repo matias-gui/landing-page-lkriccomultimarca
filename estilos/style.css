@@ -121,6 +121,9 @@ nav .menu-navegacao a:hover::after{
 }
 
 .container-corpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100vw;
 }
 
@@ -134,10 +137,7 @@ nav .menu-navegacao a:hover::after{
 
 .card-secao{
     padding: 20px;
-    width: 100vw;
     min-height: 100vh;
-    margin-bottom: 20px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
@@ -200,7 +200,7 @@ nav .menu-navegacao a:hover::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     padding: 10px;
 }
 .buttonmascfemin {
@@ -273,20 +273,25 @@ nav .menu-navegacao a:hover::after{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 70%;
+
 }
 .carregarroupas{
     display: flex;
-    height: 100vh;
-    transition: transform 2s ease-in-out;
+    height: 80vh;
+    transition: transform 3s ease;
 }
 .containercarregarroupas{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 100%;
-    box-shadow: 2px 2px 5px #0000004a;
-    
+    min-width: 100%;  
+    overflow: hidden;
+}
+.carregarImg{
+    width: 100%;
+    height: auto;
 }
 
 
