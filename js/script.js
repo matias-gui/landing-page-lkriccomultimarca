@@ -64,17 +64,15 @@ escreverh2()
 
 let buttonmasc = document.querySelector('#buttonmasc')
 let buttonfemin = document.querySelector('#buttonfemin')
-let carregarroupas = document.querySelector('.carregarroupas')
+let carregarroupasMasc = document.querySelector('.carregarroupasMasc')
 buttonmasc.addEventListener('click', () => {    
      buttonmasc.classList.add("active");
      buttonfemin.classList.remove("active");
-     carregarroupas.innerHTML = carregarRoupasMasc()
 })
 
 buttonfemin.addEventListener('click', () => {
    buttonmasc.classList.remove("active");
    buttonfemin.classList.add("active");
-   carregarroupas.innerHTML = carregarRoupasFemin();
 
    
 })
