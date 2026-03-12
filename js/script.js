@@ -5,10 +5,9 @@ let menu = document.querySelector('.menu-navegacao');
 let body = document.body
 
 buttonMenu.addEventListener('click', function () {
-    menu.style.position = 'fixed';
-    menu.style.right = '0';
-    menu.style.transition = '0.8s ease-in-out';
-    menu.style.width = '100%';
+    menu.style.position = 'absolute'
+    menu.style.clipPath = 'circle(160% at 100% 0%)'
+    menu.style.transition = '1s all'
     body.style.overflow = 'hidden';
 
 
@@ -19,9 +18,7 @@ buttonMenu.addEventListener('click', function () {
 
 buttonClose.addEventListener('click', function () {
     body.style.overflowY = 'auto';
-    menu.style.right = '-100%';
-    menu.style.transition = '0.8s ease-in-out';
-    main.style.opacity = '1';
+    menu.style.clipPath ='circle(0% at 100% 0%)';
     main.style.transition = '0.8s ease-in-out';
     buttonMenu.style.opacity = '1';
     buttonMenu.style.transition = '1.2s ease-in-out';
@@ -73,11 +70,45 @@ buttonmasc.addEventListener('click', () => {
 buttonfemin.addEventListener('click', () => {
    buttonmasc.classList.remove("active");
    buttonfemin.classList.add("active");
-
-   
 })
 
+let carregarroupasmasc = document.querySelector('.carregarroupasMasc')
+let array = []
 
+fetch('/json/roupamasc.json') // Faz a aquisição do json
+.then(response => response.json())
+.then(converserJson => {
+    try{
+      array = converserJson.roupasMasc
+      array.forEach(element => {
+        carregarroupasmasc.innerHTML += `
+            
+        `
+      });
+    }catch(erro){
+        console.error(erro);
+    }
+});
+let proximo = document.querySelector(".proximo");
+let anterior = document.querySelector(".anterior");
+
+
+
+let indix = 0;
+
+proximo.addEventListener('click', () =>  {
+    if(indix >= array.length){
+        indix = 0;
+    }
+    indix++
+} )
+
+anterior.addEventListener('click', () => {
+    if(indix <= 0){
+        indix = array.length -1;
+    }
+    indix--
+})
 
 
 
