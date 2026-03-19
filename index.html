@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lkriccomultimarca</title>
-    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
     <header>
         <nav class="nav-bar">
-            <img src="image/logotipo.jpg" alt="Logo da Loja Lukas Ricco Multimarca" class="logotipo" />
-            <img src="/image/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Icone de Menu" class="icone-menu" />
+            <img src="/assets/images/logotipo.jpg" alt="Logo da Loja Lukas Ricco Multimarca" class="logotipo" />
+            <img src="/assets/images/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Icone de Menu" class="icone-menu" />
             <section class="menu-navegacao">
-                <img src="image/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Icone de Fechar Menu"class="icone-fechar" onclick="fecharMenu()" />
+                <img src="/assets/images/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Icone de Fechar Menu"class="icone-fechar" onclick="fecharMenu()" />
                 <section class="menu-links">
-                    <a href="">Novidades</a>
-                    <a href="">Roupas</a>
+                    <a href="#containernovidades">Novidades</a>
+                    <a href="#card-roupas">Roupas</a>
                     <a href="">Sobre</a>
                     <a href="">Contato</a>
                     <a href="">Duvidas</a>
@@ -27,14 +27,13 @@
     </header>
     <main class="container-corpo">
         <section class="apresentacao">
-            <h1 class="tituloapresentacao"> Lkriccomultimarca</h1>
+            <h1> Lkriccomultimarca</h1>
             <p>Sua loja de roupas multimarca favorita!</p>
         </section>
         <section class="containernovidades">
-            <article class="cardh2">
-                <h2 class="digitartext"></h2>
-            </article>
             <article class="card-secao" id="card-novidades">
+             <h2 class="titleNovidades">Confira Nossas Novidades
+             </h2>
                 <button class="buttonnovidades">Conferir</button>
             </article>
         </section>
@@ -47,8 +46,8 @@
 
             </article>
             <article class="buttons"> 
-                <button class="proximo"><img src="/image/arrow_back_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
-                <button class="anterior"><img src="/image/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
+                <button class="proximo"><img src="/assets/images/arrow_back_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
+                <button class="anterior"><img src="/assets/images/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
             </article>
         </section>
     </main>
@@ -79,29 +78,29 @@
             </h3>
             <article>
                 <p>
-                    <a href=""><img src="/image/iconesRedeSocias/attach_email_24dp_FFFF_FILL0_wght400_GRAD0_opsz24.png"
+                    <a href=""><img src="/assets/images/iconesRedeSocias/attach_email_24dp_FFFF_FILL0_wght400_GRAD0_opsz24.png"
                             alt=""></a>
                 </p>
                 <p>
-                    <a href=""><img src="/image/iconesRedeSocias/instagram.png" alt=""></a>
+                    <a href=""><img src="/assets/images/iconesRedeSocias/instagram.png" alt=""></a>
                 </p>
                 <p>
                     <a href=""><img
-                            src="/image/iconesRedeSocias/phone_forwarded_24dp_FFFF_FILL0_wght400_GRAD0_opsz24.png"
+                            src="/assets/images/iconesRedeSocias/phone_forwarded_24dp_FFFF_FILL0_wght400_GRAD0_opsz24.png"
                             alt=""></a>
                 </p>
                 <p>
-                    <a href=""><img src="/image/iconesRedeSocias/whatsapp (3).png" alt=""></a>
+                    <a href=""><img src="/assets/images/iconesRedeSocias/whatsapp (3).png" alt=""></a>
                 </p>
             </article>
         </section>
         <section class="formaPagamentos">
             <h3>Formas de Pagamentos</h3>
             <article>
-                <img src="/image/iconesPagamentos/icons8-visa-48.png" alt="" class="imgFormaPagamentos">
-                <img src="/image/iconesPagamentos/vecteezy_mastercard-icon-symbol-logo_55687058.png" alt=""
+                <img src="/assets/images/iconesPagamentos/icons8-visa-48.png" alt="" class="imgFormaPagamentos">
+                <img src="/assets/images/iconesPagamentos/vecteezy_mastercard-icon-symbol-logo_55687058.png" alt=""
                     class="imgFormaPagamentos">
-                <img src="/image/iconesPagamentos/icons8-foto-48.png" alt="" class="imgFormaPagamentos">
+                <img src="/assets/images/iconesPagamentos/icons8-foto-48.png" alt="" class="imgFormaPagamentos">
             </article>
         </section>
         <hr class="linha">
@@ -116,7 +115,6 @@
 
 </body>
 
-<script src="/js/script.js" defer></script>
-<script src="/js/carregarRoupas.js" defer></script>
+<script src="/assets/js/main.js" defer></script>
 
 </html>
