@@ -290,27 +290,54 @@ nav .icone-menu {
     width: 100%;
 
 }
-.carregarroupasMasc{
-    position: relative;
+.carregarProducts{
     display: flex;
-    width: 80%;
-    min-height: 60vh;
-    overflow: hidden;
-    transition: transform 3s ease-in-out;
-
-}
-.containercarregarroupas{
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    min-width: 97%;
+    width: 80%;
     overflow: hidden;
-    margin: 10px;
-    border: 1px solid #141414;
-    box-shadow: 2px 2px 5px #0000001a;
-    border-radius: 10px;
+    min-height: 60vh;
+
+    .mostrarProducts{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: clamp(400px, 40vw, 800px);
+        gap: 10px;
+        background-color: var(--color-bg);
+        box-shadow: 2px 2px -2px #00000020;
+
+
+        img{
+            width: clamp(400px, 40vw, 800px);
+            height: 400px;
+            object-fit: cover;
+        }
+        p{
+            font-size: clamp(16px, 1vw, 30px);
+            font-weight: 900;
+        }
+        button{
+            padding: 10px;
+            width: clamp(100px, 30vw, 200px);
+            background-color: var(--color-primary);
+            border: none;
+            color: var(--color-bg);
+            border-radius: 5px;
+            margin-bottom: 15px;
+            box-shadow: 1px 1px 3px #000;
+            cursor: pointer;
+            transition: opacity .3s ease-in-out;
+        }
+        button:hover{
+            opacity: 80%;
+        }
+    }
+   
 }
+
 .active{
     opacity: 1;
     transition: all .5s;

@@ -3,12 +3,19 @@
 // data.roupasMasc => acessa o produto 
 // forEach => percorre o produtos
 
-fetch("/data/produtos.json") 
+let carregarProducts = document.querySelector('.carregarProducts')
+fetch("/assets/data/produtos.json") 
 .then( response => response.json()) 
-.then( data => (
-    data.roupasMasc.forEach( element => {
-        console.log(element)
-    })
-
-
+.then( dados => (
+    dados.roupasMasc.forEach( element => {
+      carregarProducts.innerHTML+= `
+        <article class="mostrarProducts">
+        <img src="${element.img}">
+        <p class="title">${element.titulo} </p>
+        <p>${element.preco}</p>
+        <button> Ver Produto</button>
+        </article>
+      `
+    }
+)
 ));

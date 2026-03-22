@@ -6,70 +6,70 @@
         "titulo": "Camisa Polo",
         "preco": "R$89,99",
         "cor": "Branca",
-        "img": "image/roupasMasc/Image_yexul6yexul6yexu.png"
+        "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu.png"
     },
     {
         "id": 2,
         "titulo": "Camiseta Lisa",
         "preco": "R$45,00",
         "cor": "Preta",
-        "img": "image/roupasMasc/Image_yexul6yexul6yexu (1).png"
+        "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (1).png"
     },
     {
         "id": 3,
         "titulo": "Bermuda Jeans",
         "preco": "R$120,00",
         "cor": "Azul",
-        "img": "image/roupasMasc/Image_yexul6yexul6yexu (2).png"
+        "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (2).png"
     },
     {
         "id": 4,
         "titulo": "Calça Social",
         "preco": "R$180,00",
         "cor": "Cinza",
-        "img": "image/roupasMasc/Image_yexul6yexul6yexu (3).png"
+        "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (3).png"
     },
     {
         "id": 5,
         "titulo": "Jaqueta Jeans",
         "preco": "R$250,00",
         "cor": "Azul Claro",
-        "img": "image/roupasMasc/Image_yexul6yexul6yexu (4).png"
+        "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (4).png"
     },
     {
         "id": 6,
         "titulo": "Camiseta Estampada",
         "preco": "R$55,00",
         "cor": "Vermelha",
-        "img": "image/roupasMasc/Image_yexul6yexul6yexu (5).png"
+        "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (5).png"
     },
     {
         "id": 7,
         "titulo": "Shorts Esportivo",
         "preco": "R$95,00",
         "cor": "Preto",
-        "img": "image/roupasMasc/Image_yexul6yexul6yexu (6).png"
+        "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (6).png"
     },
     {
         "id": 8,
         "titulo": "Camisa Xadrez",
         "preco": "R$110,00",
         "cor": "Vermelho/Preto",
-        "img": "image/roupasMasc/Image_yexul6yexul6yexu (7).png"
+        "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (7).png"
     },
     {
         "id": 9,
         "titulo": "Calça Jeans Slim",
         "preco": "R$150,00",
         "cor": "Azul Escuro",
-        "img": "image/roupasMasc/Image_yexul6yexul6yexu (8).png"
+        "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (8).png"
     },
     {
         "id": 10,
         "titulo": "Polo com Listras",
         "preco": "R$99,00",
         "cor": "Azul/Branco",
-        "img": "image/roupasMasc/Image_yexul6yexul6yexu (9).png"
+        "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (9).png"
     }],
     "roupasFem": [
         {
