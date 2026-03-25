@@ -299,6 +299,7 @@ nav .icone-menu {
     min-height: 60vh;
 
     .mostrarProducts{
+        opacity: 0;
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -337,9 +338,9 @@ nav .icone-menu {
     }
    
 }
-.ativo{
+.mostrarProducts.ativo{
    opacity: 1;
-   z-index: 2;
+  
 }
 .active{
     opacity: 1;
