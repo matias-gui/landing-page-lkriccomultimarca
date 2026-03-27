@@ -40,6 +40,7 @@ function carrossel() {
 
 };
 
-
-
+setInterval(()=>{
+    buttonProximo.click()
+}, 3000)
 
