@@ -44,4 +44,4 @@ fetch("/assets/data/produtos.json")
 ));
 }
 
-
+ 

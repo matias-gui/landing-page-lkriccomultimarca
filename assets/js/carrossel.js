@@ -13,6 +13,7 @@ function carrossel() {
     buttonProximo.addEventListener('click', () => {
         //Remove a classe ativo
         mostrarProducts[index].classList.remove('ativo');
+ 
         // Encrementação do index
         index++
         // Se o index passar do tamanho do mostrarProducts, ele volta para o inicio
@@ -38,9 +39,39 @@ function carrossel() {
         console.log(index)
     });
 
+    let interval;
+    // carrossel altera a cada 3,5s 
+    function autoPlay() {
+        interval = setInterval(() => {
+            buttonProximo.click()
+        }, 5000)
+    }
+    // pausa o carrossel
+    function pausarCarrossel() {
+        clearInterval(interval)
+    }
+
+    const container = document.querySelector('.carregarProducts');
+    // quando o mouse estiver sobre o container, o carrossel será pausado
+    container.addEventListener('mouseenter', (e) => {
+        clearInterval(interval)
+        if (!container.contains(e.relatedTarget)) {
+            pausarCarrossel()
+        }
+
+    });
+    // quando o mouse sair do container, o carrossel volta para o automatico
+    container.addEventListener('mouseleave', (e) => {
+        if (!container.contains(e.relatedTarget)) {
+            autoPlay()
+        }
+
+    })
+
 };
 
-setInterval(()=>{
-    buttonProximo.click()
-}, 3000)
+
+
+
+
 

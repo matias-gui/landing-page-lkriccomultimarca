@@ -291,12 +291,14 @@ nav .icone-menu {
 
 }
 .carregarProducts{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 55%;
     overflow: hidden;
-    min-height: 60vh;
+    min-height: 52vh;
+  
 
     .mostrarProducts{
         opacity: 0;
@@ -309,6 +311,8 @@ nav .icone-menu {
         gap: 10px;
         background-color: var(--color-bg);
         box-shadow: 2px 2px -2px #00000020;
+        transition: all 2s ease-in-out;
+     
 
 
         img{
@@ -335,12 +339,14 @@ nav .icone-menu {
         button:hover{
             opacity: 80%;
         }
+
     }
    
 }
 
 .mostrarProducts.ativo{
    opacity: 1;
+   transition: opacity 2s ease-in-out;
   
 }
 .active{
