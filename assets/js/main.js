@@ -53,6 +53,5 @@ buttonfemin.addEventListener('click', () => {
     buttonfemin.classList.add("active");
    
     carregarFem()
-
-
 });
+

@@ -15,12 +15,13 @@ fetch("/assets/data/produtos.json")
         <img src="${element.img}">
         <p class="title">${element.titulo} </p>
         <p>${element.preco}</p>
-        <button> Ver Produto</button>
+        <button class="verProduto"> Ver Produto</button>
         </article>
       `;
         carregarProducts.innerHTML = html
 }), carrossel()
 )
+
 );
 }
 
@@ -35,13 +36,16 @@ fetch("/assets/data/produtos.json")
         <img src="${element.img}">
         <p class="title">${element.titulo} </p>
         <p>${element.preco}</p>
-        <button> Ver Produto</button>
+        <button class="verProduto"> Ver Produto</button>
         </article>
       `;
       carregarProducts.innerHTML = index
+
 }),  carrossel()
 
 ));
+
 }
 
- 
+
+

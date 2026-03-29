@@ -1,56 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lkriccomultimarca</title>
+    <title>Produto</title>
+    <link rel="stylesheet" href="/assets/css/pageProducts.css">
     <link rel="stylesheet" href="/assets/css/style.css">
-</head>
 
+</head>
 <body>
-    <header>
-        <nav class="nav-bar">
-            <img src="/assets/images/logotipo.jpg" alt="Logo da Loja Lukas Ricco Multimarca" class="logotipo" />
-            <img src="/assets/images/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Icone de Menu" class="icone-menu" />
-            <section class="menu-navegacao">
-                <img src="/assets/images/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Icone de Fechar Menu"class="icone-fechar" onclick="fecharMenu()" />
-                <section class="menu-links">
-                    <a href="#containernovidades">Novidades</a>
-                    <a href="#card-roupas">Roupas</a>
-                    <a href="">Sobre</a>
-                    <a href="">Contato</a>
-                    <a href="">Duvidas</a>
-                </section>
-            </section>
-        </nav>
-    </header>
-    <main class="container-corpo">
-        <section class="apresentacao">
-            <h1> Lkriccomultimarca</h1>
-            <p>Sua loja de roupas multimarca favorita!</p>
-        </section>
-        <section class="containernovidades">
-            <article class="card-secao" id="card-novidades">
-             <h2 class="titleNovidades">Confira Nossas Novidades
-             </h2>
-                <button class="buttonnovidades">Conferir</button>
-            </article>
-        </section>
-        <section class="card-secao" id="card-roupas">
-            <article class="containerbutton">
-                <button class="buttonmascfemin active" id="buttonmasc"> Masculino </button>
-                <button class="buttonmascfemin" id="buttonfemin"> Feminino </button>
-            </article>
-            <article class="carregarProducts">
-            </article>
-            <article class="buttons"> 
-                <button class="buttonAnterior"><img src="/assets/images/arrow_back_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
-                <button class="buttonProximo"><img src="/assets/images/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
-            </article>
+    <main>
+        <section>
+            <img src="" alt="" class="imgProduto">
+            <h1 class="nomeProduto"></h1>
+            <p class="precoProduto"></p>
+            <p class="descricaoProduto"></p>
+            <select  id="tamanho">
+                <option value="">P</option>
+                <option value="">M</option>
+                <option value="">G</option>
+            </select>
         </section>
     </main>
-    <footer>
+      <footer>
         <section class="duvidas">
             <details>
                 <summary>
@@ -111,12 +83,6 @@
             <p>Icons by <a href="https://icons8.com.br/" target="_blank">Icons8</a></p>
         </section>
     </footer>
-
+    
 </body>
-
-<script src="/assets/js/main.js" defer></script>
-<script src="/assets/js/products.js" defer></script>
-<script src="/assets/js/carrossel.js" defer></script>
-<script src="/assets/js/verProduto.js"></script>
-
 </html>
