@@ -12,10 +12,11 @@ fetch('/assets/data/produtos.json')
    let nomeProduto = document.querySelector('.nomeProduto')
    let precoProduto = document.querySelector('.precoProduto')
    let descricaoProduto = document.querySelector('.descricaoProduto')
-   imgProduto.innerHTML = `<img src="${produto.img}">`
+   imgProduto.src = `${produto.img}`
+   imgProduto.alt = `${produto.nome}`
    nomeProduto.innerHTML = `${produto.titulo}`
    precoProduto.innerHTML = `${produto.preco}`
 
 
-   console.log(produto)
+   console.log(produto.img)
 })
