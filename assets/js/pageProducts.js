@@ -16,7 +16,4 @@ fetch('/assets/data/produtos.json')
    imgProduto.alt = `${produto.nome}`
    nomeProduto.innerHTML = `${produto.titulo}`
    precoProduto.innerHTML = `${produto.preco}`
-
-
-   console.log(produto.img)
 })
