@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Carrinho</title>
+    <link rel="stylesheet" href="/assets/css/pageCarrinho.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    
+        <header>
+        <nav class="nav-bar">
+            <img src="/assets/images/logotipo.jpg" alt="Logo da Loja Lukas Ricco Multimarca" class="logotipo" />
+            <section class="icones">
+                <img src="/assets/images/shopping_bag_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="icone Carrinho" class="iconeCarrinho">
+                <img src="/assets/images/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Icone de Menu" class="icone-menu" />
+            </section>
+            <section class="menu-navegacao">
+                <img src="/assets/images/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Icone de Fechar Menu"class="icone-fechar" onclick="fecharMenu()" />
+                <section class="menu-links">
+                    <a href="#containernovidades">Novidades</a>
+                    <a href="#card-roupas">Roupas</a>
+                    <a href="">Sobre</a>
+                    <a href="">Contato</a>
+                    <a href="">Duvidas</a>
+                </section>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Seu carrinho está vazio</h2>
+            <p>Vamos as Compras?</p>
+            <button class="buttonComecar">Começar</button>
+        </section>
+    </main>
+    <footer>
+         <section class="formaPagamentos">
+            <h3>Formas de Pagamentos</h3>
+            <article>
+                <img src="/assets/images/iconesPagamentos/icons8-visa-48.png" alt="" class="imgFormaPagamentos">
+                <img src="/assets/images/iconesPagamentos/vecteezy_mastercard-icon-symbol-logo_55687058.png" alt=""
+                    class="imgFormaPagamentos">
+                <img src="/assets/images/iconesPagamentos/icons8-foto-48.png" alt="" class="imgFormaPagamentos">
+            </article>
+        </section>
+        <hr class="linha">
+        <section class="enderçoDireitos">
+            <p>
+                Endereço: Rua Exemplo, 123, Cidade, Estado
+            </p>
+            <p>&copy; 2026 Lkriccomultimarca. Todos os direitos reservados.</p>
+            <p>Icons by <a href="https://icons8.com.br/" target="_blank">Icons8</a></p>
+        </section>
+    </footer>
 </body>
+<script src="/assets/js/main.js" defer></script>
+<script src="/assets/js/carrinho.js" defer></script>
+<script src="/assets/js/comecarCarrinho.js" defer></script>
 </html>
