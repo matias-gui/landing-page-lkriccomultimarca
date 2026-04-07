@@ -26,7 +26,7 @@ buttonClose.addEventListener('click', () => {
 // Carregar Pagina Novidades
 let buttonnovidades = document.querySelector('.buttonnovidades');
 buttonnovidades.addEventListener('click', () => {
-    window.location.href = '/pages/roupasnovidades.html'
+    window.location.href = 'pages/roupasnovidades.html'
 });
 
 // Carregar Roupas Masculina ou Feminina

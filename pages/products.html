@@ -9,17 +9,41 @@
 
 </head>
 <body>
+    <header>
+        <nav class="nav-bar">
+            <img src="/assets/images/logotipo.jpg" alt="Logo da Loja Lukas Ricco Multimarca" class="logotipo" />
+            <section class="icones">
+                <img src="/assets/images/shopping_bag_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="icone Carrinho" class="iconeCarrinho">
+                <img src="/assets/images/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Icone de Menu" class="icone-menu" />
+            </section>
+            <section class="menu-navegacao">
+                <img src="/assets/images/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="Icone de Fechar Menu"class="icone-fechar" onclick="fecharMenu()" />
+                <section class="menu-links">
+                    <a href="#containernovidades">Novidades</a>
+                    <a href="#card-roupas">Roupas</a>
+                    <a href="">Sobre</a>
+                    <a href="">Contato</a>
+                    <a href="">Duvidas</a>
+                </section>
+            </section>
+        </nav>
+    </header>
     <main>
         <section>
-            <img src="" alt="" class="imgProduto">
             <h1 class="nomeProduto"></h1>
-            <p class="precoProduto"></p>
             <p class="descricaoProduto"></p>
-            <select  id="tamanho">
-                <option value="">P</option>
-                <option value="">M</option>
-                <option value="">G</option>
-            </select>
+            <p class="precoProduto"></p>
+            <img src="" alt="" class="imgProduto">
+             <h2>Tamanho e numeração:</h2>
+            <article class="containerNumeracao">
+                <button value="P" aria-checked="true">P</button>
+                <button value="M" aria-checked="false">M</button>
+                <button value="G" aria-checked="false">G</button>
+                <button value="GG" aria-checked="false">GG</button>
+                <button value="G3" aria-checked="false">G3</button>
+            </article>
+            <button class="buttonCarrinho">Adicionar ao Carrinho <img src="/assets/images/shopping_cart_checkout_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="icone Carrinho"></button>
+            
         </section>
     </main>
       <footer>
@@ -83,7 +107,11 @@
             <p>Icons by <a href="https://icons8.com.br/" target="_blank">Icons8</a></p>
         </section>
     </footer>
-    <script src="/assets/js/verProduto.js"></script>
-    <script src="/assets/js/pageProducts.js"></script>
+      <script src="/assets/js/carrinho.js" defer></script>
+    <script src="/assets/js/verProduto.js" defer></script>
+    <script src="/assets/js/pageProducts.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/adicionarAoCarrinho.js" defer></script>
+  
 </body>
 </html>

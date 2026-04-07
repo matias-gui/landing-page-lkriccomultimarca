@@ -7,7 +7,7 @@ document.addEventListener('click', (e) => {
     if(btn){
        const id = btn.dataset.id
        //redireciona o usuário para outra página
-       window.location.href = `pages/products.html?id=${id}`
+       window.location.href = `/pages/products.html?id=${id}`
         
     }
 })
