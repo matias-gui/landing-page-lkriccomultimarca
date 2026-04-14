@@ -14,16 +14,6 @@
 
 }
 
-@keyframes buttonFecharMenu {
-    0%{
-        transform:scale(1) ;
-
-        
-    }
-    100%{
-        transform:scale(1.1);
-    }
-}
 * {
     margin: 0;
     padding: 0;
@@ -39,6 +29,8 @@ body {
     overflow-x: hidden;
 }
 
+/* Mobile-firts */
+@media (max-width: 768px){
 header {
     display: flex;
     width: 100%;
@@ -46,10 +38,9 @@ header {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 header .nav-bar{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
+    display: flex;;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
 
 
@@ -58,13 +49,11 @@ header .nav-bar{
         justify-content: end;
         align-items: center;
         gap: 20px;
-        width: 200px;
-        padding: 10px;
         margin-right: 10px;
 
         .iconeCarrinho, .icone-menu{
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
             cursor: pointer;
             transition: opacity .3s ease-in-out;
         }
@@ -77,13 +66,11 @@ header .nav-bar{
 
 
 header nav .logotipo {
-    width: 80px;
+    width: 50px;
     height: auto;
     margin: 10px;
     border-radius: 50%;
 }
-
-
 
  .menu-navegacao {
     position: absolute;
@@ -96,6 +83,7 @@ header nav .logotipo {
     background-color:#fbf6f6;
     clip-path: circle(0% at 100% 0%);
     gap: 50px;
+    z-index: 3;
 
 }
 .menu-navegacao .menu-links{
@@ -104,8 +92,6 @@ header nav .logotipo {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 50vw;
-    height: 50vh;
 
 }
 
@@ -116,20 +102,7 @@ header nav .logotipo {
     font-weight: bold;
     font-size: 18px;
 }
-.menu-links a::after{
-    content: " ";
-    position: absolute;
-    width: 0;
-    height: 3px;
-    left: 0;
-    bottom: 0;
-    background: linear-gradient(to left, #0000006d, #b49d9d);
-    transition:  0.7s ease-in-out;
-}
-.menu-links a:hover::after{
-    width: 100%;
-    
-}
+
 
 .icone-fechar {
     justify-self: end;
@@ -138,16 +111,10 @@ header nav .logotipo {
     padding: 5px;
     border-radius: 50%;
     border: none;
-    box-shadow: 2px 2px 5px rgba(26, 10, 10, 0.421);
     transition: 0.8s ease-in-out;
     cursor: pointer;
-    animation: buttonFecharMenu 5s infinite linear;
 }
 
-.icone-fechar:hover {
-    transition: 0.8s ease-in-out;
-    background-color: #ffffff;
-}
 
 .container-corpo {
     display: flex;
@@ -164,12 +131,12 @@ header nav .logotipo {
 
     h1{
         font-family: var(--font-title);
-        font-size: clamp(16px , 5vw, 40px);
+        font-size: 28px;
     }
 }
 
 .card-secao{
-    padding: 20px;
+    padding: 10px;
     min-height: 100vh;
     overflow: hidden;
 }
@@ -187,36 +154,40 @@ header nav .logotipo {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     background: url(/assets/images/keagan-henman-XYtuOYfIg_M-unsplash.jpg);
+    background-position: center ;
     background-size: cover;
-    gap: 20px;
+
 
         
     .titleNovidades{
         font-family: var(--font-title);
-        font-size: clamp(14px, 10vw, 50px);
-        font-weight: 500;
+        font-weight: 700;
         color: var(--color-primary);
-        margin: 10px;
-        /* background: rgba(255, 255, 255, 0.082);
-        backdrop-filter: blur(8px); */
+        border-radius: 10px 0;
+        background: rgba(30, 28, 28, 0.53);
+        backdrop-filter: blur(4px);
         padding: 20px 40px;
-        border-radius: 8px;
         letter-spacing: 1px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #fff;
     }
 
     .buttonnovidades{
-        background: var(--color-secondary);
+        background: #ffffffb7;
+        font-family: var(--font-text);
+        font-weight: bold;
+        font-size: 16px;
         border: none;
         width: 200px;
         padding: 20px 32px;
         font-weight: 600;
         cursor: pointer;
-        transition: transform 0.5s ease-in-out, background 0.5s ease-in-out;
-    }
-    .buttonnovidades:hover{
-        background: #d6c2a5;
-        transform: scale(1.05) translate(12px, 12px);
+        border-radius: 10px 0;
+        border-top:  3px solid ;
+        border-bottom: 3px solid ;
         
+
     }
 }
 
@@ -311,9 +282,10 @@ header nav .logotipo {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 55%;
+    width: 100%;
     overflow: hidden;
-    min-height: 52vh;
+    min-height: 60vh;
+  
   
 
     .mostrarProducts{
@@ -323,18 +295,15 @@ header nav .logotipo {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: clamp(400px, 40vw, 800px);
         gap: 10px;
+        width: 200px;
         background-color: var(--color-bg);
         box-shadow: 2px 2px -2px #00000020;
         transition: all 2s ease-in-out;
-         pointer-events: none;
-
-
-
+        pointer-events: none;
         img{
-            width: clamp(400px, 40vw, 800px);
-            height: 400px;
+            width:200px;
+            height: 240px;
             object-fit: cover;
         }
         p{
@@ -343,7 +312,7 @@ header nav .logotipo {
         }
         button{
             padding: 10px;
-            width: clamp(100px, 30vw, 200px);
+            width: 70%;
             background-color: var(--color-primary);
             border: none;
             color: var(--color-bg);
@@ -373,27 +342,22 @@ header nav .logotipo {
 }
 .buttons{
     position: absolute;
+    width: 100%;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
-    width: clamp(75vw, 500px, 800px);
     padding: 10px;
+
 }
 .buttonProximo, .buttonAnterior{
-    border: none;
-    padding: 10px;
+    border: 1px solid #00000043;
+    padding: 5px;
     border-radius: 50%;
-    box-shadow: 2px 2px 5px #00000075;
     cursor: pointer;
-    object-fit: cover;
     
 }
-
-
-
-
 
 footer{
     display: flex;
@@ -412,6 +376,7 @@ footer{
     flex-wrap: wrap;
     padding: 10px;
     text-indent: 50px;
+    font-size: 12px;
     border-bottom: 1px solid #fff;
 }
 .duvidas summary, .sobre summary{
@@ -443,6 +408,7 @@ details a:hover{
     padding: 10px;
     width: 500px;
     margin: 20px 0;
+    font-size: 16px;
 }
 .contatos article, .formaPagamentos article{
     display: flex;
@@ -451,14 +417,14 @@ details a:hover{
     margin: 30px 0 ;
 }
 .contatos p a img {
-    width: 40px;
+    width: 35px;
     padding: 5px;
     border: 1px solid #ffffff2f;
     box-shadow: 2px 2px 5px inset #ffffff2d;
     border-radius: 10px;
 }
 .imgFormaPagamentos{
-    width: 45px;
+    width: 35px;
     padding: 5px;
     background-color: #fffafa7f;
     border: 1px solid #ffffff2f;
@@ -473,9 +439,12 @@ details a:hover{
 
 }
 .enderçoDireitos{
+    padding: 10px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2
+
+}
 }
