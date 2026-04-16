@@ -1,45 +1,50 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-main{
+
+main {
     display: flex;
     justify-content: center;
     align-items: end;
     width: 100vw;
     height: 100vh;
+}
 
-    section{
-        display: flex;
-        flex-direction: column;
+main section {
+    display: flex;
+    flex-direction: column;
 
-        align-items: center;
-        width: 90%;
-        height: 90%;
-       h2{
-        font-size: 35px;
-       }
-       p{
-        font-size: 18px;
-       }
-        .buttonComecar{
-            width: 55%;
-            padding: 15px;
-            margin-top: 25px;
-            background-color: #000;
-            color: #fff;
-            font-size: 18px;
-            font-weight: bold;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    align-items: center;
+    width: 90%;
+    height: 90%;
 
-        }
-        .buttonComecar:hover{
-            opacity: 0.8;
-            transform: scale(1.01);
-        }
+    h2 {
+        font-size: 20px;
+    }
+
+     p {
+        font-size: 14px;
+    }
+
+    .buttonComecar {
+        width: 55%;
+        padding: 10px;
+        margin-top: 25px;
+        background-color: #000;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+    }
+
+    .buttonComecar:hover {
+        opacity: 0.8;
+        transform: scale(1.01);
     }
 }
