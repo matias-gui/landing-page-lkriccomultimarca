@@ -34,8 +34,10 @@ main{
             margin-bottom: 20px;
         }
         .descricaoProduto{
-            font-size: 18px;
+            font-size: 14px;
             font-weight: 300;
+            width: 70%;
+            text-align: center;
         }
         .imgProduto{
             width: 70vw;

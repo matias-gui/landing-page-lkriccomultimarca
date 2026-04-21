@@ -1,0 +1,36 @@
+{
+    "roupasNovidades": [
+        {
+            "id": 1,
+            "titulo": "Motetom Dragão",
+            "preco": "R$200,00",
+            "cor": "Preta",
+            "descricao": "Moletom estilizado com design de dragão, perfeito para um look ousado e confortável.",
+            "img": "/assets/images/roupasNovidades/img.1.png"
+        },
+        {
+            "id": 2,
+            "titulo": "Motetom Learn",
+            "preco": "R$199,99",
+            "cor": "Azul",
+            "descricao": "Moletom casual com estampa 'Learn', ideal para dias frios e estilo urbano.",
+            "img": "/assets/images/roupasNovidades/img.2.png"
+        },
+        {
+            "id": 3,
+            "titulo": "Jaqueta jeans",
+            "preco": "R$249,99",
+            "cor": "Azul",
+            "descricao": "Jaqueta jeans clássica, versátil e durável para qualquer ocasião.",
+            "img": "/assets/images/roupasNovidades/img.3.png"
+        },
+        {
+            "id": 4,
+            "titulo": "Camisa Tokio Drift",
+            "preco": "R$99,99",
+            "cor": "Cinza",
+            "descricao": "Camisa inspirada em Tokio Drift, para fãs de velocidade e estilo streetwear.",
+            "img": "/assets/images/roupasNovidades/img.4.png"
+        }
+    ]
+}

@@ -1,10 +1,8 @@
 let buttonCarrinho = document.querySelector('.buttonCarrinho')
 
-
-function pegarProduto(){
+function adicionarProduto(){
   
 }
-
 
 buttonCarrinho.addEventListener('click', () => {
      window.location.href = '/pages/carrinho.html'
