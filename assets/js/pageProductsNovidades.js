@@ -1,15 +1,23 @@
-let cardNov = document.querySelectorAll('.card-nov')
 
-const params = new URLSearchParams(window.location.search)
+const params = new URLSearchParams(window.location.search);
 
-const id = params.get('id')
+fetch('/assets/data/novidades.json')
+.then(res => res.json())
+.then( dados => {
+  const id = Number(params.get('id'));
 
-const produto = cardNov.find(element => element.id === id)
-let imgProduto = document.querySelector('.imgProduto')
-let nomeProduto = document.querySelector('.nomeProduto')
-let precoProduto = document.querySelector('.precoProduto')
-let descricaoProduto = document.querySelector('.descricaoProduto')
-imgProduto.src = `${produto.img}`
-imgProduto.alt = `${produto.nome}`
-nomeProduto.innerHTML = `${produto.titulo}`
-precoProduto.innerHTML = `${produto.preco}`
+   const produtoNov = dados.roupasNovidades.find( element => element.id === id);
+   
+   let imgProduto = document.querySelector('.imgProdutoNov')
+   let nomeProduto = document.querySelector('.nomeProdutoNov')
+   let precoProduto = document.querySelector('.precoProdutoNov')
+   let descricaoProduto = document.querySelector('.descricaoProdutoNov')
+   imgProduto.src = `${produtoNov.img}`
+   imgProduto.alt = `${produtoNov.nome}`
+   nomeProduto.innerHTML = `${produtoNov.titulo}`
+   precoProduto.innerHTML = `${produtoNov.preco}`
+   descricaoProduto.innerHTML = `${produtoNov.descricao}`
+})
+
+
+

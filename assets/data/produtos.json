@@ -1,82 +1,93 @@
 {
-    "roupasMasc":
-    [
-    {
-        "id": 1,
-        "titulo": "Camisa Polo",
-        "preco": "R$89,99",
-        "cor": "Branca",
-        "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu.png"
-    },
-    {
-        "id": 2,
-        "titulo": "Camiseta Lisa",
-        "preco": "R$45,00",
-        "cor": "Preta",
-        "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (1).png"
-    },
-    {
-        "id": 3,
-        "titulo": "Bermuda Jeans",
-        "preco": "R$120,00",
-        "cor": "Azul",
-        "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (2).png"
-    },
-    {
-        "id": 4,
-        "titulo": "Calça Social",
-        "preco": "R$180,00",
-        "cor": "Cinza",
-        "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (3).png"
-    },
-    {
-        "id": 5,
-        "titulo": "Jaqueta Jeans",
-        "preco": "R$250,00",
-        "cor": "Azul Claro",
-        "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (4).png"
-    },
-    {
-        "id": 6,
-        "titulo": "Camiseta Estampada",
-        "preco": "R$55,00",
-        "cor": "Vermelha",
-        "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (5).png"
-    },
-    {
-        "id": 7,
-        "titulo": "Shorts Esportivo",
-        "preco": "R$95,00",
-        "cor": "Preto",
-        "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (6).png"
-    },
-    {
-        "id": 8,
-        "titulo": "Camisa Xadrez",
-        "preco": "R$110,00",
-        "cor": "Vermelho/Preto",
-        "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (7).png"
-    },
-    {
-        "id": 9,
-        "titulo": "Calça Jeans Slim",
-        "preco": "R$150,00",
-        "cor": "Azul Escuro",
-        "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (8).png"
-    },
-    {
-        "id": 10,
-        "titulo": "Polo com Listras",
-        "preco": "R$99,00",
-        "cor": "Azul/Branco",
-        "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (9).png"
-    }],
+    "roupasMasc": [
+        {
+            "id": 1,
+            "titulo": "Camisa Polo",
+            "preco": "R$89,99",
+            "cor": "Branca",
+            "descricao": "Camisa polo clássica em algodão, perfeita para um look casual e elegante.",
+            "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu.png"
+        },
+        {
+            "id": 2,
+            "titulo": "Camiseta Lisa",
+            "preco": "R$45,00",
+            "cor": "Preta",
+            "descricao": "Camiseta básica lisa, confortável e versátil para o dia a dia.",
+            "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (1).png"
+        },
+        {
+            "id": 3,
+            "titulo": "Bermuda Jeans",
+            "preco": "R$120,00",
+            "cor": "Azul",
+            "descricao": "Bermuda jeans resistente, ideal para passeios e atividades ao ar livre.",
+            "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (2).png"
+        },
+        {
+            "id": 4,
+            "titulo": "Calça Social",
+            "preco": "R$180,00",
+            "cor": "Cinza",
+            "descricao": "Calça social de tecido premium, adequada para ambientes formais.",
+            "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (3).png"
+        },
+        {
+            "id": 5,
+            "titulo": "Jaqueta Jeans",
+            "preco": "R$250,00",
+            "cor": "Azul Claro",
+            "descricao": "Jaqueta jeans moderna, combina estilo e durabilidade.",
+            "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (4).png"
+        },
+        {
+            "id": 6,
+            "titulo": "Camiseta Estampada",
+            "preco": "R$55,00",
+            "cor": "Vermelha",
+            "descricao": "Camiseta com estampa vibrante, adiciona personalidade ao seu guarda-roupa.",
+            "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (5).png"
+        },
+        {
+            "id": 7,
+            "titulo": "Shorts Esportivo",
+            "preco": "R$95,00",
+            "cor": "Preto",
+            "descricao": "Shorts esportivo leve, perfeito para treinos e atividades físicas.",
+            "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (6).png"
+        },
+        {
+            "id": 8,
+            "titulo": "Camisa Xadrez",
+            "preco": "R$110,00",
+            "cor": "Vermelho/Preto",
+            "descricao": "Camisa xadrez clássica, atemporal e confortável.",
+            "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (7).png"
+        },
+        {
+            "id": 9,
+            "titulo": "Calça Jeans Slim",
+            "preco": "R$150,00",
+            "cor": "Azul Escuro",
+            "descricao": "Calça jeans slim fit, oferece um caimento perfeito e moderno.",
+            "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (8).png"
+        },
+        {
+            "id": 10,
+            "titulo": "Polo com Listras",
+            "preco": "R$99,00",
+            "cor": "Azul/Branco",
+            "descricao": "Camisa polo listrada, combina elegância e descontração.",
+            "img": "/assets/images/roupasMasc/Image_yexul6yexul6yexu (9).png"
+        }
+    ],
     "roupasFem": [
         {
             "id": 1,
             "titulo": "Blusa de Alça",
             "preco": "R$79,99",
             "cor": "Rosa",
+            "descricao": "Blusa de alça delicada, ideal para dias quentes e looks femininos.",
             "img": "https://via.placeholder.com/300?text=Blusa+de+Al%C3%A7a"
         },
         {
@@ -84,6 +95,7 @@
             "titulo": "Vestido Floral",
             "preco": "R$149,00",
             "cor": "Multicolorido",
+            "descricao": "Vestido floral encantador, perfeito para ocasiões especiais.",
             "img": "https://via.placeholder.com/300?text=Vestido+Floral"
         },
         {
@@ -91,6 +103,7 @@
             "titulo": "Saia Midi",
             "preco": "R$89,00",
             "cor": "Preta",
+            "descricao": "Saia midi elegante, versátil para diversos estilos.",
             "img": "https://via.placeholder.com/300?text=Saia+Midi"
         },
         {
@@ -98,6 +111,7 @@
             "titulo": "Calça Legging",
             "preco": "R$59,00",
             "cor": "Cinza",
+            "descricao": "Calça legging confortável, excelente para atividades diárias.",
             "img": "https://via.placeholder.com/300?text=Cal%C3%A7a+Legging"
         },
         {
@@ -105,6 +119,7 @@
             "titulo": "Jaqueta de Couro",
             "preco": "R$299,00",
             "cor": "Preta",
+            "descricao": "Jaqueta de couro sofisticada, adiciona atitude ao seu visual.",
             "img": "https://via.placeholder.com/300?text=Jaqueta+de+Couro"
         },
         {
@@ -112,6 +127,7 @@
             "titulo": "Top Cropped",
             "preco": "R$49,99",
             "cor": "Branca",
+            "descricao": "Top cropped moderno, destaca a silhueta com estilo.",
             "img": "https://via.placeholder.com/300?text=Top+Cropped"
         },
         {
@@ -119,6 +135,7 @@
             "titulo": "Macacão Jeans",
             "preco": "R$199,00",
             "cor": "Azul",
+            "descricao": "Macacão jeans prático, combina conforto e moda.",
             "img": "https://via.placeholder.com/300?text=Macac%C3%A3o+Jeans"
         },
         {
@@ -126,6 +143,7 @@
             "titulo": "Cropped Estampado",
             "preco": "R$69,00",
             "cor": "Verde",
+            "descricao": "Top cropped estampado, cheio de personalidade.",
             "img": "https://via.placeholder.com/300?text=Cropped+Estampado"
         },
         {
@@ -133,6 +151,7 @@
             "titulo": "Shorts Jeans",
             "preco": "R$119,00",
             "cor": "Azul",
+            "descricao": "Shorts jeans descolado, perfeito para um look casual.",
             "img": "https://via.placeholder.com/300?text=Shorts+Jeans"
         },
         {
@@ -140,6 +159,7 @@
             "titulo": "Blazer Slim",
             "preco": "R$179,00",
             "cor": "Bege",
+            "descricao": "Blazer slim refinado, ideal para composições formais.",
             "img": "https://via.placeholder.com/300?text=Blazer+Slim"
         }
     ]

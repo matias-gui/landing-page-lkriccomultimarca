@@ -1,6 +1,6 @@
 let buttonCarrinho = document.querySelector('.buttonCarrinho')
 
-function pegarProduto(){
+function adicionarProduto(){
   
 }
 

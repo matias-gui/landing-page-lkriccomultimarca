@@ -25,18 +25,16 @@ buttonClose.addEventListener('click', () => {
 
 // Carregar Pagina Novidades
 let buttonnovidades = document.querySelector('.buttonnovidades');
+if(buttonnovidades){
 buttonnovidades.addEventListener('click', () => {
     window.location.href = 'pages/roupasnovidades.html'
-});
+});}
 
 // Carregar Roupas Masculina ou Feminina
 let buttonmasc = document.querySelector('#buttonmasc');
 let buttonfemin = document.querySelector('#buttonfemin');
 
-// Carrega os produtos quando a página é carregada
-document.addEventListener('DOMContentLoaded', () => {
-    carregarMasc()
-})
+if(buttonmasc){
 buttonmasc.addEventListener('click', () => {
     
     if(buttonmasc.classList.contains("active")) return
@@ -46,12 +44,14 @@ buttonmasc.addEventListener('click', () => {
     carregarMasc()
    
    
-});
+});}
+if(buttonfemin){
 buttonfemin.addEventListener('click', () => {
     if(buttonfemin.classList.contains("active")) return
     buttonmasc.classList.remove("active");
     buttonfemin.classList.add("active");
    
     carregarFem()
-});
+});}
 
+  carregarMasc()

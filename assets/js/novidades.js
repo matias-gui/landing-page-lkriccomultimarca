@@ -9,9 +9,10 @@ fetch('/assets/data/novidades.json')
         <img src="${element.img}">
         <p class="title">${element.titulo} </p>
         <p>${element.preco}</p>
-        <button class="verProduto" data-id="${element.id}"> Ver Produto</button>
+        <button class="verProdutoNovidades" data-id="${element.id}"> Ver Produto</button>
         </article>
-        `
+       `
     });
     carNov.innerHTML = html
 })
+

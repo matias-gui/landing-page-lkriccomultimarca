@@ -21,8 +21,6 @@
         width: 200px;
         background-color: var(--color-bg);
         box-shadow: 2px 2px -2px #00000020;
-        pointer-events: none;
-
         
     }
    
@@ -34,8 +32,9 @@
      .carregarNovidades p {
         font-size: 16px;
         font-weight: 900;
+        
     }
-      .carregarNovidades .verProduto {
+      .verProdutoNovidades {
         padding: 10px;
         width: 70%;
         background-color: var(--color-primary);
@@ -44,6 +43,10 @@
         border-radius: 5px;
         margin-bottom: 15px;
         box-shadow: 1px 1px 3px #000;
+        transition: opacity .3s ease-in-out;
+        cursor: pointer;
+        
     }
+   
 
 }
