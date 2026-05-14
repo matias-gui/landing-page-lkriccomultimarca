@@ -4,6 +4,7 @@ let buttonClose = document.querySelector('.icone-fechar');
 let menu = document.querySelector('.menu-navegacao');
 
 // Menu
+if(buttonClose) {
 buttonMenu.addEventListener('click',  () => {
     menu.style.clipPath = 'circle(160% at 100% 0%)';
     menu.style.transition = '1s all';
@@ -14,7 +15,8 @@ buttonMenu.addEventListener('click',  () => {
     buttonMenu.style.opacity = '0';
     buttonMenu.style.transition = '1.2s ease-in-out';
 });
-
+}
+if(buttonClose){
 buttonClose.addEventListener('click', () => {
     menu.style.clipPath = 'circle(0% at 100% 0%)';
     main.style.transition = '0.8s ease-in-out';
@@ -22,7 +24,7 @@ buttonClose.addEventListener('click', () => {
     buttonMenu.style.transition = '1.2s ease-in-out';
 
 });
-
+}
 // Carregar Pagina Novidades
 let buttonnovidades = document.querySelector('.buttonnovidades');
 if(buttonnovidades){
@@ -33,7 +35,7 @@ buttonnovidades.addEventListener('click', () => {
 // Carregar Roupas Masculina ou Feminina
 let buttonmasc = document.querySelector('#buttonmasc');
 let buttonfemin = document.querySelector('#buttonfemin');
-
+// Verifica se o botão existe antes de chamar o evento de clique
 if(buttonmasc){
 buttonmasc.addEventListener('click', () => {
     
@@ -45,6 +47,7 @@ buttonmasc.addEventListener('click', () => {
    
    
 });}
+// Verifica se o botão existe antes de chamar o evento de clique
 if(buttonfemin){
 buttonfemin.addEventListener('click', () => {
     if(buttonfemin.classList.contains("active")) return
@@ -53,5 +56,8 @@ buttonfemin.addEventListener('click', () => {
    
     carregarFem()
 });}
-
-  carregarMasc()
+// Só vai carregar a função se o botão existir
+if(buttonmasc){
+     carregarMasc()
+}
+ 
