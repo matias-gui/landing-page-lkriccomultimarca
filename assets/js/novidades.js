@@ -1,5 +1,5 @@
 let carNov = document.querySelector('.card-secao');
-fetch('/assets/data/novidades.json')
+fetch('/assets/data/produtos.json')
 .then(res => res.json())
 .then(dados => {
     let html = '';

@@ -1,7 +1,7 @@
 
 const params = new URLSearchParams(window.location.search);
 
-fetch('/assets/data/novidades.json')
+fetch('/assets/data/produtos.json')
 .then(res => res.json())
 .then( dados => {
   const id = Number(params.get('id'));
