@@ -112,4 +112,34 @@ main{
                 cursor: pointer;
              }
     }
-}}
+}
+.overlay{
+    position: fixed;
+    inset: 0;
+    background-color:rgba(0,0,0,0.3);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+   
+}
+@keyframes notificacao {
+    from{
+        opacity: 0;
+        transform: translatex(-200px);
+    }
+
+}
+.notificacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: green;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    animation: notificacao 1.2s ease-in-out forwards; 
+ }
+}

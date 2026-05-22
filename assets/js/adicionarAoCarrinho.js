@@ -8,7 +8,6 @@ function adicionarProduto(item){
      carrinho.push(item);
      localStorage.setItem('carrinho', JSON.stringify(carrinho));
      console.log('Produto adicionado ao carrinho:', item);
-    // window.location.href = '/pages/carrinho.html'
   
 }
 
@@ -21,12 +20,32 @@ if (buttonCarrinho){
 
      const todosProdutos = [
           ...dados.roupasMasc,
-          ...dados.roupasFem
+          ...dados.roupasFem,
+          ...dados.roupasNovidades
      ]
      const id = Number(params.get('id'));
      const produto = todosProdutos.find((p) => p.id == id)
      adicionarProduto(produto);
-     })
-}
+     // Cria uma div para carregar a notificação
+     const overlay = document.createElement('div');
+     overlay.classList.add('overlay');
+     // Cria uma section 
+     const sectionNotificacao = document.createElement('section');
+     // Adiciona a classe notificacao para estilizar a notificação
+     sectionNotificacao.classList.add('notificacao');  
+     // Adiciona a mensagem que será exibida na notificação
+     sectionNotificacao.innerHTML = `
+     <p> Produto adicionado ao carrinho com sucesso!</p>`;
+     // Adiciona a section dentro da div de overlay
+     overlay.appendChild(sectionNotificacao);
+     // Adiciona a div de overlay ao body para exibir a notificação
+     document.body.appendChild(overlay);
+
+     // Remove o a notificação após 1 segundo
+     setTimeout(()=>{
+          document.body.removeChild(overlay);
+     }, 3000)
+
+})}
      
 
