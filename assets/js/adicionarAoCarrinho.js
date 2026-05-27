@@ -8,6 +8,7 @@ function adicionarProduto(item){
      carrinho.push(item);
      localStorage.setItem('carrinho', JSON.stringify(carrinho));
      console.log('Produto adicionado ao carrinho:', item);
+     console.log(carrinho)
   
 }
 
