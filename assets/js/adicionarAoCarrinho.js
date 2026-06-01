@@ -5,10 +5,24 @@ let buttonCarrinho = document.querySelector('.buttonCarrinho')
 function adicionarProduto(item){
      if(!carrinhoItems) return;
      let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-     carrinho.push(item);
-     localStorage.setItem('carrinho', JSON.stringify(carrinho));
-     console.log('Produto adicionado ao carrinho:', item);
-     console.log(carrinho)
+     // Verifica se o carrinho está vazio, se estiver, adiciona o produto diretamente
+     if(carrinho.length === 0){
+          carrinho.push(item);
+          console.log(item);
+          localStorage.setItem('carrinho', JSON.stringify(carrinho));
+          console.log('Produto adicionado ao carrinho:', item);
+     }else{
+          // Verifica se o produto já existe no carrinho, se existir, exibe um alerta, caso contrário, adiciona o produto ao carrinho
+          const produtoExistente = carrinho.find(produto => produto.id === item.id);
+          if(produtoExistente){
+           const quantidade = document.querySelector('.quantidade');
+           console.log('Produto já existe no carrinho:', item);    
+          }else{
+               carrinho.push(item);
+               localStorage.setItem('carrinho', JSON.stringify(carrinho));
+               console.log('Produto adicionado ao carrinho:', item);
+          }
+     }
   
 }
 

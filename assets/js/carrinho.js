@@ -1,7 +1,7 @@
 const carrinho = document.querySelector('.iconeCarrinho')
 
 carrinho.addEventListener('click', () =>{
-      renderizarCarrinho()
+     renderizarCarrinho();
 })
 
 function renderizarCarrinho(){
@@ -18,6 +18,8 @@ function renderizarCarrinho(){
                 <div class="detalhes-item">
                     <h3>${element.nome}</h3>
                     <p>R$ ${element.preco}</p>
+                    <button class="quantidade"> 1 un. </button>
+                    <button class="removerItem"> Remover </button>
                 </div>
             </div>    `
         });
