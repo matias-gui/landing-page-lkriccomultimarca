@@ -1,5 +1,5 @@
-const buttonComecar = document.querySelector('.buttonComecar')
+// const buttonComecar = document.querySelector('.buttonComecar')
 
-buttonComecar.addEventListener('click' , () => {
-    window.location.href = '/index.html'
-} )
+// buttonComecar.addEventListener('click' , () => {
+//     window.location.href = '/index.html'
+// } )

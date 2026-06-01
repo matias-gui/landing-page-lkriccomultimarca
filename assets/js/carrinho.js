@@ -1,18 +1,16 @@
 const carrinho = document.querySelector('.iconeCarrinho')
 
-
-
 carrinho.addEventListener('click', () =>{
-    window.location.href = '/pages/carrinho.html';
-    renderizarCarrinho();
-    console.log('clicou')
+     renderizarCarrinho();
 })
 
 function renderizarCarrinho(){
         // Recupera os itens do carrinho do localStorage
         let carrinhoItems = localStorage.getItem('carrinho');
+        carrinhoItems = JSON.parse(carrinhoItems) || [];
         // Seleciona o container onde os itens do carrinho serão exibidos
-        const carrinhoContainer = document.querySelector('.carrinho-container');
+        console.log(carrinhoItems)
+        const carrinhoContainer = document.querySelector('.pageCarrinho');
         carrinhoItems.forEach(element => {
             carrinhoContainer.innerHTML += `
             <div class="item-carrinho">
@@ -20,10 +18,10 @@ function renderizarCarrinho(){
                 <div class="detalhes-item">
                     <h3>${element.nome}</h3>
                     <p>R$ ${element.preco}</p>
+                    <button class="quantidade"> 1 un. </button>
+                    <button class="removerItem"> Remover </button>
                 </div>
             </div>    `
-            console.log(carrinhoItems)
         });
 }
-
 
