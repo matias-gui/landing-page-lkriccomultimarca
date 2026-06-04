@@ -9,17 +9,16 @@ main {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 main .pageCarrinho{
     display: flex;
     flex-direction: column;
-
     align-items: center;
-    width: 90%;
-    height: 90%;
-    background-color: #4a2d2d;
+    width: 100%;
+    height: 100%;
 
     h2 {
         font-size: 20px;
@@ -32,34 +31,54 @@ main .pageCarrinho{
         display: flex;
         align-items: center;
         width: 100%;
-        height: 100%;
-        background-color: #fff;
         margin-top: 20px;
         padding: 10px;
-        border-radius: 5px;
+        background-color: #f5f5f5;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 
         img {
             width: 80px;
             height: 80px;
+            background-color: #000;
             object-fit: cover;
             border-radius: 5px;
             margin-bottom: 10px;
         }
-
-        .item-info {
+        .detalhesItem{
             display: flex;
             flex-direction: column;
             align-items: center;
-
-            h3 {
-                font-size: 16px;
-                margin-bottom: 5px;
-            }
-
-            p {
-                font-size: 14px;
-                color: #555;
-            }
+            width: 50%;
+        }
+        .buttonsItens{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            gap: 14px;
+        }
+        .quantidade{
+            font-size: 14px;
+            padding: 3px 10px;
+            border: 1px solid #00000033;
+            border-radius: 5px;
+        }
+        .removerItem{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            border: none;
+        }
+        .removerItem img{
+            margin-top: 5px;
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
         }
     }
 
