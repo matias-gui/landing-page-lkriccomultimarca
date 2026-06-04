@@ -1,8 +1,9 @@
 const carrinho = document.querySelector('.iconeCarrinho')
 
 carrinho.addEventListener('click', () =>{
-     renderizarCarrinho();
+    window.location.href = '/pages/carrinho.html';
 })
+ renderizarCarrinho();
 
 function renderizarCarrinho(){
         // Recupera os itens do carrinho do localStorage
@@ -14,12 +15,14 @@ function renderizarCarrinho(){
         carrinhoItems.forEach(element => {
             carrinhoContainer.innerHTML += `
             <div class="item-carrinho">
-                <img src="${element.imagem}" alt="${element.nome}">
-                <div class="detalhes-item">
-                    <h3>${element.nome}</h3>
-                    <p>R$ ${element.preco}</p>
+                <img src="${element.img}" alt="${element.img}">
+                <div class="detalhesItem">
+                    <h3>${element.titulo}</h3>
+                    <p>${element.preco}</p>
+                </div>
+                <div class="buttonsItens"> 
                     <button class="quantidade"> 1 un. </button>
-                    <button class="removerItem"> Remover </button>
+                    <button class="removerItem"><img src="/assets/images/icons8-delete.svg"></button>
                 </div>
             </div>    `
         });
